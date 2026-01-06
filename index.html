@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Style Quiz Menu</title>
+    <title>Roblox Quiz Menu</title>
     <style>
         /* นำเข้าฟอนต์ที่ดูทันสมัย */
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
@@ -15,18 +16,20 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #2E3137; /* สีพื้นหลังโทน Roblox Dark Mode */
+            background-color: #425885;
+            /* สีพื้นหลังโทน Roblox Dark Mode */
             font-family: 'Kanit', sans-serif;
         }
 
         .container {
             text-align: center;
-            background-color: #393B42; /* พื้นหลังของกรอบเมนู */
+            background-color: #393B42;
+            /* พื้นหลังของกรอบเมนู */
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             width: 90%;
-            max-width: 500px;
+
         }
 
         h1 {
@@ -39,7 +42,8 @@
 
         .button-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* แบ่งเป็น 2 คอลัมน์ */
             gap: 15px;
         }
 
@@ -53,14 +57,15 @@
             cursor: pointer;
             border-radius: 4px;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 0 #B7B7B7; /* เพิ่มมิติให้เหมือนปุ่ม Roblox */
+            box-shadow: 0 4px 0 #b7b7b7;
+            /* เพิ่มมิติให้เหมือนปุ่ม Roblox */
             outline: none;
             text-transform: uppercase;
         }
 
         /* เอฟเฟกต์เมื่อวางเมาส์ */
         .roblox-btn:hover {
-            background-color: #E5E5E5;
+            background-color: #48ce37;
             transform: translateY(-2px);
             box-shadow: 0 6px 0 #B7B7B7;
         }
@@ -68,12 +73,13 @@
         /* เอฟเฟกต์เมื่อกดปุ่ม */
         .roblox-btn:active {
             transform: translateY(2px);
-            box-shadow: 0 2px 0 #B7B7B7;
+            box-shadow: 0 2px 0 #56e743;
         }
 
         /* สีพิเศษสำหรับปุ่มเด่น (เช่น ปุ่มเริ่มเกม) */
         .btn-primary {
-            background-color: #00B06F; /* สีเขียวสไตล์ Roblox */
+            background-color: #00B06F;
+            /* สีเขียวสไตล์ Roblox */
             color: white;
             box-shadow: 0 4px 0 #008454;
         }
@@ -95,19 +101,21 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Code Quiz Battle</h1>
+        <h1>Quiz Battle</h1>
         <div class="button-grid">
-            <button class="roblox-btn btn-primary" href="./lesson01/PROGRAMMING_Lesson_1.html">PROGRAMMING_Lesson_1</button>
-            <button class="roblox-btn" href="./lesson02/PROGRAMMING_Lesson_2.html">PROGRAMMING_Lesson_2</button>
-            <button class="roblox-btn" href="./lesson03/PROGRAMMING_Lesson_3.html">PROGRAMMING_Lesson_3</button>
-            <button class="roblox-btn" href="./lesson01/DATABAES_Lesson_1.html">DATABAES_Lesson_1</button>
-            <button class="roblox-btn" href="./lesson02/DATABASE_Lesson_2.html">DATABAES_Lesson_2</button>
-            <button class="roblox-btn" href="./lesson03/DATABASE_Lesson_3.html">DATABAES_Lesson_3</button>
+                    <button class="roblox-btn" href="./lesson01/PROGRAMMING_Lesson_1.html">PROGRAMMING_Lesson_1</button>
+                    <button class="roblox-btn" href="./lesson02/PROGRAMMING_Lesson_2.html">PROGRAMMING_Lesson_2</button>
+                    <button class="roblox-btn" href="./lesson03/PROGRAMMING_Lesson_3.html">PROGRAMMING_Lesson_3</button>
+                    <button class="roblox-btn" href="./lesson01/DATABAES_Lesson_1.html">DATABAES_Lesson_1</button>
+                    <button class="roblox-btn" href="./lesson02/DATABASE_Lesson_2.html">DATABAES_Lesson_2</button>
+                    <button class="roblox-btn" href="./lesson03/DATABASE_Lesson_3.html">DATABAES_Lesson_3</button>
         </div>
     </div>
 
 </body>
+
 </html>
