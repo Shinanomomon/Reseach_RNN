@@ -53,7 +53,61 @@ const QUESTIONS = [
   { q: "ฐานข้อมูลเชิงสัมพันธ์เก็บข้อมูลในรูปแบบใด?", choices: ["รูปภาพ", "ตาราง", "แฟ้มข้อความ", "เสียง"], answer: 1, difficulty: 'hard' }, 
   { q: "ข้อใดคือองค์ประกอบพื้นฐานของฐานข้อมูล?", choices: ["แถวและคอลัมน์", "รูปและเสียง", "โปรแกรมและเกม", "อินเทอร์เน็ต"], answer: 0, difficulty: 'hard' }, 
   { q: "ข้อใดคือหน้าที่หลักของ DBMS?", choices: ["พิมพ์เอกสาร", "จัดการและควบคุมข้อมูล", "ออกแบบเว็บไซต์", "เล่นมัลติมีเดีย"], answer: 1, difficulty: 'hard' }, 
-  { q: "ฐานข้อมูลช่วยองค์กรในเรื่องใดมากที่สุด?", choices: ["การตกแต่งเอกสาร", "การตัดสินใจจากข้อมูล", "การวาดรูป", "การพิมพ์งาน"], answer: 1, difficulty: 'hard' }, 
+  { q: "ฐานข้อมูลช่วยองค์กรในเรื่องใดมากที่สุด?", choices: ["การตกแต่งเอกสาร", "การตัดสินใจจากข้อมูล", "การวาดรูป", "การพิมพ์งาน"], answer: 1, difficulty: 'hard' },   
+  
+  // Topic 1: Relational Design
+  { q: "\"Relational Database\" (ฐานข้อมูลเชิงสัมพันธ์) เก็บข้อมูลในรูปแบบใด?", choices: ["ไฟล์ Text", "ตาราง (Table)", "รูปภาพ", "โฟลเดอร์"], answer: 1, difficulty: 'easy' }, 
+  { q: "\"Primary Key\" (คีย์หลัก) คืออะไร?", choices: ["คอลัมน์ที่ระบุเอกลักษณ์ของแถว", "แถวแรกของตาราง", "ชื่อตาราง", "ชื่อฐานข้อมูล"], answer: 0, difficulty: 'easy' }, 
+  { q: "\"Foreign Key\" (คีย์นอก) ใช้ทำอะไร?", choices: ["ใช้ระบุเอกลักษณ์", "ใช้เชื่อมโยงตาราง", "ใช้เรียงข้อมูล", "ใช้คำนวณ"], answer: 1, difficulty: 'medium' }, 
+  { q: "\"Normalization\" (การทำให้เป็นบรรทัดฐาน) มีประโยชน์หลักอย่างไร?", choices: ["เพิ่มความเร็ว", "ลดความซ้ำซ้อนของข้อมูล", "เพิ่มขนาดฐานข้อมูล", "ทำให้ค้นหาช้าลง"], answer: 1, difficulty: 'hard' }, 
+
+  // Topic 2: Tables & Relationships
+  { q: "\"Schema\" (สคีมา) ของฐานข้อมูลหมายถึงอะไร?", choices: ["ข้อมูลในตาราง", "โครงสร้างของฐานข้อมูล", "รหัสผ่าน", "โปรแกรม DBMS"], answer: 1, difficulty: 'medium' }, 
+  { q: "ความสัมพันธ์แบบ \"One-to-Many\" (หนึ่งต่อกลุ่ม) คือข้อใด?", choices: ["นักเรียน 1 คน มี 1 รหัส", "1 แผนก มีพนักงานหลายคน", "นักเรียนหลายคน ลงทะเบียนหลายวิชา", "1 รหัส มีนักเรียน 1 คน"], answer: 1, difficulty: 'medium' }, 
+  { q: "\"ER Diagram\" (แผนภาพ ER) ใช้อธิบายอะไร?", choices: ["โฟลว์การทำงานโปรแกรม", "โครงสร้างและความสัมพันธ์ของข้อมูล", "อัลกอริทึม", "หน้าจอโปรแกรม"], answer: 1, difficulty: 'medium' }, 
+  { q: "ความสัมพันธ์แบบ \"Many-to-Many\" มักต้องใช้อะไรในการออกแบบ?", choices: ["ตารางหลัก 2 ตาราง", "ไม่ต้องใช้อะไร", "ตารางเชื่อมโยง (Junction Table)", "คีย์นอกในตารางเดียว"], answer: 2, difficulty: 'hard' }, 
+
+  // Topic 3: 
+  { q: "E-R Model ใช้สำหรับอะไร?", choices: ["เขียนโปรแกรม", "ออกแบบฐานข้อมูล", "สร้างเว็บไซต์", "จัดเก็บไฟล์"], answer: 1, difficulty: 'hard' }, 
+  { q: "E ใน E-R Diagram หมายถึงอะไร?", choices: ["Event", "Entity", "Element", "Error"], answer: 1, difficulty: 'hard' }, 
+  { q: "Entity หมายถึงข้อใด?", choices: ["ความสัมพันธ์", "ตาราง", "สิ่งที่ต้องการเก็บข้อมูล", "คำสั่ง SQL"], answer: 2, difficulty: 'hard' }, 
+  { q: "ความสัมพันธ์ระหว่าง Entity เรียกว่าอะไร?", choices: ["Attribute", "Relationship", "Primary Key", "Record"], answer: 1, difficulty: 'hard' }, 
+  { q: "Attribute คือข้อใด?", choices: ["ตาราง", "คุณลักษณะของ Entity", "ความสัมพันธ์", "ฐานข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "Primary Key มีหน้าที่อะไร?", choices: ["เก็บข้อมูลซ้ำ", "ระบุข้อมูลไม่ซ้ำกัน", "เชื่อมต่ออินเทอร์เน็ต", "แสดงผลข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "ข้อใดเป็น Primary Key ที่เหมาะสม?", choices: ["ชื่อนักเรียน", "ที่อยู่", "รหัสนักเรียน", "เบอร์โทรศัพท์"], answer: 2, difficulty: 'hard' }, 
+  { q: "Foreign Key ใช้ทำอะไร?", choices: ["แสดงผลข้อมูล", "เชื่อมความสัมพันธ์ระหว่างตาราง", "ลบข้อมูล", "คำนวณข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "ตารางฐานข้อมูลประกอบด้วยอะไร?", choices: ["วาดภาพ", "ใช้สร้างฐานข้อมูลจริง", "โปรแกรม", "คำสั่ง"], answer: 0, difficulty: 'hard' }, 
+  { q: "การแปลง E-R Diagram เป็นตารางทำเพื่ออะไร?", choices: ["แยกตาราง", "รวมตารางจากความสัมพันธ์", "เขียนรายงาน", "ตกแต่งข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "Normalization คืออะไร?", choices: ["เพิ่มข้อมูลซ้ำ", "ลดความถูกต้อง", "ลดความซ้ำซ้อนของข้อมูล", "ทำให้ข้อมูลหาย"], answer: 2, difficulty: 'hard' }, 
+  { q: "ข้อใดคือประโยชน์ของ Normalization?", choices: ["ลบตาราง students", "ลบแถวแรก", "ลบข้อมูลทั้งหมดในตาราง students", "Error"], answer: 2, difficulty: 'hard' }, 
+  { q: "ตารางที่ดีควรมีลักษณะใด?", choices: ["มีข้อมูลซ้ำจำนวนมาก", "ไม่มี Primary Key", "จัดเก็บข้อมูลเป็นระเบียบ", "ไม่มีความสัมพันธ์"], answer: 2, difficulty: 'hard' }, 
+  { q: "การออกแบบฐานข้อมูลที่ดีช่วยเรื่องใด?", choices: ["โปรแกรมทำงานช้าลง", "ค้นหาข้อมูลยากขึ้น", "ระบบมีประสิทธิภาพ", "ใช้พื้นที่มากขึ้น"], answer: 2, difficulty: 'hard' }, 
+  
+  // Topic 1: SQL
+  { q: "คำสั่ง `SELECT` ใน SQL ใช้ทำอะไร?", choices: ["ลบข้อมูล", "เพิ่มข้อมูล", "แก้ไขข้อมูล", "ดึงข้อมูล/สอบถาม"], answer: 3, difficulty: 'easy' }, 
+  { q: "คำสั่ง `INSERT INTO`... ใช้ทำอะไร?", choices: ["ลบข้อมูล", "เพิ่มข้อมูล", "แก้ไขข้อมูล", "ดึงข้อมูล"], answer: 1, difficulty: 'easy' }, 
+  { q: "คำสั่ง `UPDATE`... `SET`... ใช้ทำอะไร?", choices: ["ลบข้อมูล", "เพิ่มข้อมูล", "แก้ไขข้อมูล", "ดึงข้อมูล"], answer: 2, difficulty: 'easy' }, 
+  { q: "`WHERE` clause ใน SQL ใช้ทำอะไร?", choices: ["เรียงลำดับ", "จำกัดจำนวนแถว", "กำหนดเงื่อนไข", "รวมตาราง"], answer: 2, difficulty: 'easy' }, 
+  { q: "`JOIN` ใน SQL มีไว้ทำอะไร?", choices: ["แยกตาราง", "รวมตารางจากความสัมพันธ์", "ลบตาราง", "สร้างตาราง"], answer: 1, difficulty: 'medium' }, 
+  { q: "`CREATE TABLE` เป็นคำสั่งประเภทใด?", choices: ["DML (จัดการข้อมูล)", "DDL (นิยามข้อมูล)", "DCL (ควบคุมสิทธิ์)", "TCL (ธุรกรรม)"], answer: 1, difficulty: 'medium' }, 
+  { q: "`DELETE FROM students` (โดยไม่มี WHERE) จะเกิดอะไรขึ้น?", choices: ["ลบตาราง students", "ลบแถวแรก", "ลบข้อมูลทั้งหมดในตาราง students", "Error"], answer: 2, difficulty: 'medium' }, 
+  { q: "`GROUP BY` ใน SQL มักใช้ร่วมกับฟังก์ชันใด?", choices: ["`IF()`", "`NOW()`", "`CONNECT()`", "`COUNT()` หรือ `SUM()`"], answer: 3, difficulty: 'hard' }, 
+
+  // Topic 2: 
+  { q: "SQL ย่อมาจากอะไร?", choices: ["Structured Query Language", "Simple Query Language", "System Query Language", "Standard Query Language"], answer: 0, difficulty: 'hard' }, 
+  { q: "SQL ใช้สำหรับอะไร?", choices: ["วาดภาพ", "จัดการฐานข้อมูล", "เล่นเกม", "เขียนรายงาน"], answer: 1, difficulty: 'hard' }, 
+  { q: "คำสั่ง CREATE TABLE ใช้ทำอะไร?", choices: ["ลบตาราง", "สร้างตาราง", "แก้ไขข้อมูล", "แสดงข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "คำสั่ง INSERT ใช้ทำอะไร?", choices: ["ลบข้อมูล", "เพิ่มข้อมูล", "แก้ไขตาราง", "ค้นหาข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "คำสั่ง SELECT ใช้ทำอะไร?", choices: ["เพิ่มข้อมูล", "แสดงข้อมูล", "ลบตาราง", "แก้ไขโครงสร้าง"], answer: 1, difficulty: 'hard' }, 
+  { q: "คำสั่ง UPDATE ใช้ทำอะไร?", choices: ["แก้ไขข้อมูล", "แสดงข้อมูล", "ลบข้อมูล", "สร้างตาราง"], answer: 0, difficulty: 'hard' }, 
+  { q: "คำสั่ง DELETE ใช้ทำอะไร?", choices: ["เพิ่มข้อมูล", "แก้ไขข้อมูล", "ลบข้อมูล", "สร้างฐานข้อมูล"], answer: 2, difficulty: 'hard' }, 
+  { q: "DDL คือคำสั่งประเภทใด?", choices: ["จัดการข้อมูล", "จัดการโครงสร้างฐานข้อมูล", "แสดงผล", "คำนวณข้อมูล"], answer: 1, difficulty: 'hard' }, 
+  { q: "DML คือคำสั่งประเภทใด?", choices: ["จัดการข้อมูลในตาราง", "จัดการผู้ใช้", "จัดการระบบ", "สำรองข้อมูล"], answer: 0, difficulty: 'hard' }, 
+  { q: "ข้อใดเป็นคำสั่ง DDL?", choices: ["SELECT", "INSERT", "CREATE", "UPDATE"], answer: 2, difficulty: 'hard' }, 
+  { q: "ข้อใดเป็นคำสั่ง DML?", choices: ["CREATE", "DROP", "SELECT", "ALTER"], answer: 2, difficulty: 'hard' }, 
+  { q: "เครื่องหมาย * ใน SELECT * หมายถึงอะไร?", choices: ["เลือกเฉพาะ 1 คอลัมน์", "เลือกทุกคอลัมน์", "ลบข้อมูลทั้งหมด", "สร้างตารางใหม่"], answer: 1, difficulty: 'hard' }, 
+  { q: "การใช้ SQL ช่วยเรื่องใด?", choices: ["ทำให้ข้อมูลหาย", "จัดการข้อมูลได้สะดวก", "เพิ่มความซับซ้อน", "ลดความถูกต้อง"], answer: 1, difficulty: 'hard' }, 
+  { q: "ข้อใดกล่าวถูกต้องเกี่ยวกับ SQL?", choices: ["ใช้ได้เฉพาะโปรแกรมเดียว", "ใช้จัดการฐานข้อมูลเชิงสัมพันธ์", "ใช้เขียนเกม", "ใช้ตกแต่งเอกสาร"], answer: 1, difficulty: 'hard' }
   
 ];
 // --- END OF NEW QUESTIONS ---
